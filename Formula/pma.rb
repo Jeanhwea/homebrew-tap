@@ -7,16 +7,16 @@ class Pma < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Jeanhwea/project-manager-app/releases/download/v#{version}/pma-macos-arm64-v#{version}.tar.gz"
-      sha256 "efb61ccfa988aa31cc7b97e6287d537c12fd1f0e3aef1307c7fbc6d7975ad8f1"
+      sha256 "80b48a0b025796f19e12c623767e66028cfb6497fe20537c504ff0b2fdad81cc"
     else
       url "https://github.com/Jeanhwea/project-manager-app/releases/download/v#{version}/pma-macos-x86_64-v#{version}.tar.gz"
-      sha256 "8a30f3ab69d1f0fc19854cb9460d0f7f16a6efaeeff4ffb165c5f7e89f15dc29"
+      sha256 "5cac23bdd41198557e4559c099e5d3d1399276799cd7c6a03c0d6fbe53079ed3"
     end
   end
 
   on_linux do
     url "https://github.com/Jeanhwea/project-manager-app/releases/download/v#{version}/pma-linux-x86_64-v#{version}.tar.gz"
-    sha256 "fd6b144773738c52f9e1c539c93d1dc72e93208240cdbd9f8209cc3d93db5db7"
+    sha256 "d95556ee2073f73912f030c0795e880ba8ca84fb24127e5233b71179bee7baaf"
   end
 
   def install
