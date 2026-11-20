@@ -1,22 +1,22 @@
 class Pma < Formula
   desc "Git repository batch management tool"
   homepage "https://github.com/Jeanhwea/project-manager-app"
-  version "1.6.6"
+  version "1.6.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Jeanhwea/project-manager-app/releases/download/v#{version}/pma-macos-arm64-v#{version}.tar.gz"
-      sha256 "7198da4b3ad077f68e85a80f92957b52d4a0af64ee4108271ab1ed9ad64851c6"
+      sha256 "625544120b444ad813fda5c23bef4d187b9e05591571a55543e86eb54c16628d"
     else
       url "https://github.com/Jeanhwea/project-manager-app/releases/download/v#{version}/pma-macos-x86_64-v#{version}.tar.gz"
-      sha256 "c9d92cfd1ed59771c9b1cb7ef9e60c7d877a24d448387c902a9412dd8b1eb483"
+      sha256 "ec810af4d7315612cce23339af91ed6db2a2b0035ab62d4218a9a551d1b462a0"
     end
   end
 
   on_linux do
     url "https://github.com/Jeanhwea/project-manager-app/releases/download/v#{version}/pma-linux-x86_64-v#{version}.tar.gz"
-    sha256 "027831cfad0f64074a6b9e1b0959c31ec9b80baedc5040db052a7e9d9e28e712"
+    sha256 "7cb9367dbc3d9fa1bb8d505cc0797a772ffffc2e4fb5e25d4202a0a8f8446aac"
   end
 
   def install
